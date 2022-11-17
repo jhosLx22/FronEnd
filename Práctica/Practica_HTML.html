@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taconauta</title>
+</head>
+<body>
+    <header>
+        <h1>Taconauta, desde 2022</h1>
+    </header>
+
+    <section>
+        <!--Imágenes-->
+        <img src="Taconauta_logo2.png" alt="Logo Taconauta" width="250px" height="250px"/>
+        
+        <hr>
+
+        <h2>Menú</h2>
+        <h3>Tacos Universales</h3>
+        <ul>
+            <li>Bisteck .................. $30</li>
+            <li>Chorizo .................. $30</li>
+            <li>Chuleta .................. $30</li>
+            <li>Pastor .................. $30</li>
+            <li>Campechano .................. $30</li>
+        </ul>
+
+        <h3>Tacos Galácticos</h3>
+        <ul>
+            <li>Bisteck .................. $15</li>
+            <li>Chorizo .................. $15</li>
+            <li>Chuleta .................. $15</li>
+            <li>Pastor .................. $15</li>
+            <li>Campechano .................. $15</li>
+        </ul>
+
+        <h3>Especiales</h3>
+        <p>Crea tu combo con refresco por $10 más</p>
+        <dl>
+            <dt><b>Marte</b> .................. $40 </dt>
+            <dd>Tortilla de maíz con pastor y salsa roja</dd>
+            <dt><b>Saturno</b> .................. $40 </dt>
+            <dd>Tortilla de harina con asado y aros de cebolla</dd>
+            <dt><b>Neptuno</b> .................. $40 </dt>
+            <dd>Tortilla de maíz (azul) con res y queso</dd>
+        </dl>
+    </section>
+
+    <hr>
+    <section>
+        <h2>Ubicación</h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro: Via Láctea</td>
+                <td> <a href="https://g.page/pizzaperronegrorabioso?share" target="_blank">Donceles 64, Centro Histórico, CDMX </td>
+                <td>L - D 24H</td>
+            </tr>
+            <tr>
+                <td>Sur: Andrómeda</td>
+                <td> <a href="https://goo.gl/maps/dkMa8429CT7TvzZ37" target="_blank">Av. Río Churubusco 601, CDMX </a></td>
+                <td>L - D 5pm - 3am</td>
+            </tr>
+            <tr>
+                <td>Norte: Del can mayor</td>
+                <td> <a href="https://goo.gl/maps/CE5t4GYawacMMqhF7" target="_blank">Gustavo A. Madero, 07340, CDMX</a></td>
+                <td>M - D 5pm - 3am</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+    <section>
+        <h2>Pedidos</h2>
+        <h3>Realiza tu pedido aquí:</h3>
+        <form action="">
+            <p>¿De qué sucursal?</p>
+            <select>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>
+
+            <p>¿De qué tacos?</p>
+            <!--Los Id serán de ayuda a la hora de leerlos con JavaScript por cada valor-->
+            <input type="checkbox" id="Bisteck" name="Bisteck" value="Bisteck">
+                <label for="Bisteck">Bisteck</label>
+                <input type="number" id="BisteckNumber" name="Bisteck" placeholder="¿Cuántos?">
+                <br>
+                <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+                <label for="Chorizo">Chorizo</label>
+                <input type="number" id="ChorizoNumber" name="Chorizo" placeholder="¿Cuántos?">
+                <br>
+                <input type="checkbox" id="Chuleta" name="Chuleta" value="Chuleta">
+                <label for="Chuleta">Chuleta</label>
+                <input type="number" id="ChuletaNumber" name="Chuleta" placeholder="¿Cuántos?">
+                <br>
+                <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+                <label for="Pastor">Pastor</label>
+                <input type="number" id="PastorNumber" name="Pastor" placeholder="¿Cuántos?">
+                <br>
+                <input type="checkbox" id="Campechano" name="Campechano" value="Campechano">
+                <label for="Campechano">Campechano</label>
+                <input type="number" id="CampechanoNumber" name="Campechano" placeholder="¿Cuántos?">
+                
+                <br><br>
+                <label for="Nombre">Pedido a nombre de: </label><br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="¿Cuál es tu nommbre?">
+                <br><br>
+                <label for="Teléfono">Teléfono de contacto: </label><br>
+                <input type="text" id="Teléfono" name="Telefono" placeholder="¿Cuál es tu número?">
+                <br><br>
+                <label for="Dirección">Dirección de entrega: </label><br>
+                <input type="text" id="Dirección" name="Dirección" placeholder="¿A dónde lo mandamos?">
+                
+                <button type="submit">Enviar pedido</button>
+        </form>
+    </section>
+
+</body>
+</html>
